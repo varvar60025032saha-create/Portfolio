@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varvara Stasheuskaya — Portfolio Projektantki Graficznej</title>
+  <meta name="description" content="Portfolio Varvary Stasheuskiej — projektowanie graficzne, identyfikacja wizualna, plakaty, merch, multimedia. Studentka WSB Merito Gdańsk.">
+
+  <!-- Favicon / Иконка во вкладке браузера (красный логотип VS) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="theme-color" content="#A50A1F">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════ ГЛОБАЛЬНЫЙ АТМОСФЕРНЫЙ ФОН (НА ВЕСЬ САЙТ) ═══════════════ -->
+  <div class="global-ambient-backdrop" aria-hidden="true">
+    <div class="ambient-gradient-layer"></div>
+    <div class="ambient-liquid-texture"></div>
+    <div class="ambient-waves-layer">
+      <svg class="ambient-waves-svg" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="none">
+        <defs>
+          <pattern id="global-seigaiha" width="56" height="28" patternUnits="userSpaceOnUse">
+            <path d="M0,28 A28,28 0 0,1 56,28 M8,28 A20,20 0 0,1 48,28 M16,28 A12,12 0 0,1 40,28 M-28,28 A28,28 0 0,1 28,28 M-20,28 A20,20 0 0,1 20,28 M-12,28 A12,12 0 0,1 12,28 M28,28 A28,28 0 0,1 84,28 M36,28 A20,20 0 0,1 76,28 M44,28 A12,12 0 0,1 68,28" stroke="rgba(255, 255, 255, 0.04)" fill="none" stroke-width="0.8"/>
+            <path d="M-14,14 A28,28 0 0,1 42,14 M-6,14 A20,20 0 0,1 34,14 M2,14 A12,12 0 0,1 26,14 M14,14 A28,28 0 0,1 70,14 M22,14 A20,20 0 0,1 62,14 M30,14 A12,12 0 0,1 54,14" stroke="rgba(255, 255, 255, 0.04)" fill="none" stroke-width="0.8"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#global-seigaiha)" opacity="0.45" />
+        <g stroke-width="1.2">
+          <path d="M-100,180 C250,80 400,320 750,180 C1100,40 1280,300 1600,160" stroke="rgba(200, 16, 46, 0.08)" />
+          <path d="M-100,420 C200,300 450,560 800,380 C1150,200 1300,460 1600,320" stroke="rgba(255, 255, 255, 0.04)" />
+          <path d="M-100,680 C300,540 500,800 850,640 C1200,480 1350,720 1600,580" stroke="rgba(200, 16, 46, 0.07)" />
+        </g>
+      </svg>
+    </div>
+    <div class="ambient-vignette"></div>
+  </div>
+
+  <!-- ═══════════════ НАВИГАЦИЯ & ВЫБОР ЯЗЫКА (PL / EN / RU) ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">stasheuskaya<span class="ruby-dot">.</span></a>
+      <div class="lang-switcher" role="group" aria-label="Wybór języka / Language / Выбор языка">
+        <button type="button" class="lang-btn active" data-lang="pl" aria-label="Język polski">PL</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English language">EN</button>
+        <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский язык">RU</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO: EDITORIAL COVER ═══════════════ -->
+  <section class="hero" id="hero">
+    <!-- 1. Монументальное слово PORTFOLIO на фоне (от левого до правого края без отступов) -->
+    <div class="hero-big-text-wrap" aria-hidden="true">
+      <svg class="hero-big-svg" viewBox="0 0 1000 135" width="100%" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="heroPortfolioGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#D91636"/>
+            <stop offset="50%" stop-color="#A50A1F"/>
+            <stop offset="100%" stop-color="#670513"/>
+          </linearGradient>
+        </defs>
+        <text x="-6" y="116" font-family="'Space Grotesk', 'Impact', 'Arial Black', -apple-system, sans-serif" font-weight="900" font-size="138" fill="url(#heroPortfolioGrad)" textLength="1012" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
+      </svg>
+    </div>
+
+    <!-- 2. Радиальное рубиновое свечение сзади -->
+    <div class="hero-glow-backdrop" aria-hidden="true"></div>
+
+    <!-- 3. Силуэт Варвары с бас-гитарой (авторский вырезанный PNG) -->
+    <div class="hero-figure-wrap">
+      <img src="assets/images/varvara-guitar-cutout.png?v=3" alt="Варвара Сташевская с бас-гитарой" class="hero-figure-img">
+    </div>
+
+    <!-- 4. Нижнее кинематографичное затемнение (градиент) -->
+    <div class="hero-gradient-overlay" aria-hidden="true"></div>
+
+    <!-- 5. Информационный блок поверх силуэта (выровнен по левому краю) -->
+    <div class="container hero-content">
+      <div class="hero-layout-split">
+        <div class="hero-primary-info">
+          <p class="hero-label" data-i18n="hero_label">Projektowanie Graficzne &amp; Interaktywne</p>
+          <h1 class="hero-title" data-i18n="hero_title">
+            Varvara<br>
+            <span class="ruby-text">Stasheuskaya</span>
+          </h1>
+          <div class="hero-tags-line">
+            <span class="hero-meta-tag" data-i18n="hero_tag_1">Branding</span>
+            <span class="hero-meta-tag" data-i18n="hero_tag_2">UI/UX</span>
+            <span class="hero-meta-tag" data-i18n="hero_tag_3">Plakaty</span>
+            <span class="hero-meta-tag" data-i18n="hero_tag_4">Poligrafia</span>
+          </div>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            Studentka grafiki komputerowej na Uniwersytecie WSB Merito w Gdańsku.
+            Projektowanie identyfikacji wizualnej, plakatów, grafiki wystawowej oraz makiet stron i aplikacji w Figmie.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-filled" data-i18n="hero_btn_projects">Zobacz projekty</a>
+            <a href="#about" class="btn btn-outline" data-i18n="hero_btn_about">O mnie i fakty</a>
+          </div>
+        </div>
+
+        <div class="hero-side-meta">
+          <div class="hero-meta-block">
+            <span class="hero-meta-label" data-i18n="hero_meta_loc_label">Lokalizacja &amp; Rok</span>
+            <span class="hero-meta-val">Gdańsk, Poland · 2026</span>
+          </div>
+          <div class="hero-meta-block">
+            <span class="hero-meta-label" data-i18n="hero_meta_spec_label">Specjalizacja</span>
+            <span class="hero-meta-val">Multimedia &amp; Graphic Arts</span>
+          </div>
+          <a href="#about" class="hero-scroll-indicator" aria-label="Przewiń w dół">
+            <span data-i18n="hero_scroll">Przewiń w dół</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ОБО МНЕ ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="about_title">
+        O <span class="ruby-text">mnie</span>
+      </h2>
+
+      <div class="about-grid">
+        <!-- Фотография автора -->
+        <div class="about-image-column reveal">
+          <div class="about-photo-wrapper">
+            <div class="about-photo-frame">
+              <img src="assets/images/varvara.jpg" alt="Varvara Stasheuskaya" class="about-photo-img" loading="lazy">
+            </div>
+            <div class="about-photo-badge">
+              <span class="badge-dot"></span>
+              <span data-i18n="about_badge">Szukam stażu / stanowiska Junior</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Текст и факты -->
+        <div class="about-text-column reveal">
+          <p class="about-lead" data-i18n="about_lead">
+            Cześć! Studiuję multimedia i grafikę komputerową, mieszkam w Gdańsku i równolegle rozwijam się jako freelancerka.
+          </p>
+
+          <p data-i18n="about_p2">
+            W projektowaniu opieram się na solidnej bazie akademickiej (ukończyłam szkołę sztuk pięknych na Białorusi — rysunek, malarstwo, podstawy kompozycji), łącząc ją z nowoczesnym warsztatem cyfrowym.
+          </p>
+
+          <!-- Сетка фактов -->
+          <div class="about-facts-grid">
+            <div class="fact-card">
+              <div class="fact-label" data-i18n="fact_1_label">Edukacja</div>
+              <div class="fact-value">WSB Merito Gdańsk</div>
+              <div class="fact-desc" data-i18n="fact_1_desc">Studia licencjackie, 5. semestr. „Multimedia i grafika komputerowa”</div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-label" data-i18n="fact_2_label">Freelance &amp; Praktyka</div>
+              <div class="fact-value" data-i18n="fact_2_val">2022 — obecnie</div>
+              <div class="fact-desc" data-i18n="fact_2_desc">Identyfikacja wizualna, makiety stron w Figmie, banery, przygotowanie do druku (DTP)</div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-label" data-i18n="fact_3_label">Doświadczenie zespołowe</div>
+              <div class="fact-value" data-i18n="fact_3_val">Social Media &amp; Retusz</div>
+              <div class="fact-desc" data-i18n="fact_3_desc">Oprawa wizualna dla studia beauty w Mińsku, fotograf-retuszer w Pro IT</div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-label" data-i18n="fact_4_label">Języki</div>
+              <div class="fact-value">RU · PL (B1) · EN (A2)</div>
+              <div class="fact-desc" data-i18n="fact_4_desc">Swobodna praca z polskimi oraz międzynarodowymi briefami</div>
+            </div>
+          </div>
+
+          <p data-i18n="about_p3">
+            Najbliższe są mi wyzwania związane z językiem wizualnym: branding, plakaty, opakowania, merch i grafika koncepcyjna. Do procesu twórczego włączam generatywne AI (Midjourney, Stable Diffusion) jako narzędzie do szybkiej eksploracji moodboardów, tekstur i form 3D.
+          </p>
+
+          <!-- Теги навыков и инструментов -->
+          <div class="skills-block">
+            <div class="skills-category-title" data-i18n="skills_title">Narzędzia &amp; Umiejętności:</div>
+            <div class="skills-tags">
+              <span class="skill-tag skill-highlight">Figma</span>
+              <span class="skill-tag skill-highlight">Adobe Photoshop</span>
+              <span class="skill-tag skill-highlight">Adobe Illustrator</span>
+              <span class="skill-tag">Adobe InDesign (DTP / Skład)</span>
+              <span class="skill-tag">After Effects</span>
+              <span class="skill-tag" data-i18n="skill_dtp">Przygotowanie do druku (DTP, CMYK, spady)</span>
+              <span class="skill-tag" data-i18n="skill_game">Godot &amp; Ren'Py (interaktywność)</span>
+              <span class="skill-tag">Midjourney / Generative AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJEKTY ═══════════════ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title" data-i18n="projects_title">
+          Wybrane <span class="ruby-text">projekty</span>
+        </h2>
+        <p class="section-caption" data-i18n="projects_caption">Kliknij dowolny projekt, aby otworzyć szczegółowe studium przypadku (case study) w stylu Behance.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 1. OTIUM -->
+        <article class="project-card reveal" data-project-id="otium">
+          <div class="project-image-box">
+            <img src="assets/projects/otium/zachet-cover.png" alt="OTIUM" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <span class="project-tag">UI/UX &amp; Branding</span>
+            <h3 class="project-title">OTIUM</h3>
+            <p class="project-desc" data-i18n="card_otium_desc">Aplikacja i platforma wsparcia emocjonalnego oraz zdrowia psychicznego dla studentów</p>
+            <span class="project-action" data-i18n="card_action">Zobacz projekt →</span>
+          </div>
+        </article>
+
+        <!-- 2. LD BEAUTY STUDIO -->
+        <article class="project-card reveal" data-project-id="beauty-studio">
+          <div class="project-image-box">
+            <img src="assets/projects/beauty-studio/cover.jpg" alt="LD Beauty Studio" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <span class="project-tag" data-i18n="card_beauty_tag">Kompleksowy rebranding</span>
+            <h3 class="project-title">LD Beauty Studio</h3>
+            <p class="project-desc" data-i18n="card_beauty_desc">Pełna identyfikacja wizualna salonu urody w Mińsku: monogram, poligrafia, szyld i gadżety firmowe</p>
+            <span class="project-action" data-i18n="card_action">Zobacz projekt →</span>
+          </div>
+        </article>
+
+        <!-- 3. KAMENNY TSWETOK -->
+        <article class="project-card reveal" data-project-id="stone-flower">
+          <div class="project-image-box">
+            <img src="assets/projects/stone-flower/mockup-pc.jpg" alt="Kamienny Kwiat" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <span class="project-tag" data-i18n="card_stone_tag">Koncepcja identyfikacji</span>
+            <h3 class="project-title" data-i18n="card_stone_title">Kamienny Kwiat</h3>
+            <p class="project-desc" data-i18n="card_stone_desc">Autorski redesign i identyfikacja wizualna salonu urody: logo, billboardy i grafika social media</p>
+            <span class="project-action" data-i18n="card_action">Zobacz projekt →</span>
+          </div>
+        </article>
+
+        <!-- 4. CLOTHING MERCH -->
+        <article class="project-card reveal" data-project-id="clothing-merch">
+          <div class="project-image-box">
+            <img src="assets/projects/clothing-merch/znacznik-wizualizacji.png" alt="JDH Apparel & Merch" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <span class="project-tag" data-i18n="card_merch_tag">Projekt odzieży &amp; Opakowania</span>
+            <h3 class="project-title">JDH Apparel &amp; Merch</h3>
+            <p class="project-desc" data-i18n="card_merch_desc">Uczelniana koncepcja linii ubrań: metki tekstylne, nadruki na t-shirty oraz projekt pudełka wysyłkowego</p>
+            <span class="project-action" data-i18n="card_action">Zobacz projekt →</span>
+          </div>
+        </article>
+
+        <!-- 5. KONKURSOWE PLAKATY -->
+        <article class="project-card reveal" data-project-id="posters-competition">
+          <div class="project-image-box">
+            <img src="assets/projects/posters-competition/zabka-poster.png" alt="Plakaty & Konkursy" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <span class="project-tag" data-i18n="card_posters_tag">Grafika plakatowa</span>
+            <h3 class="project-title" data-i18n="card_posters_title">Plakaty &amp; Konkursy</h3>
+            <p class="project-desc" data-i18n="card_posters_desc">Seria plakatów na konkursy graficzne i wydarzenia: Żabka, festiwal Jazz Kultura, plakat Pasja</p>
+            <span class="project-action" data-i18n="card_action">Zobacz projekt →</span>
+          </div>
+        </article>
+
+        <!-- 6. DIGITAL ART -->
+        <article class="project-card reveal" data-project-id="digital-art">
+          <div class="project-image-box">
+            <img src="assets/projects/digital-art/sun.jpg" alt="Digital Art" loading="lazy">
+          </div>
+          <div class="project-overlay">
+            <span class="project-tag" data-i18n="card_art_tag">Ilustracja cyfrowa</span>
+            <h3 class="project-title" data-i18n="card_art_title">Digital Art &amp; Serie</h3>
+            <p class="project-desc" data-i18n="card_art_desc">Eksperymentalne kompozycje graficzne, gradienty, metafory i poszukiwania wizualne</p>
+            <span class="project-action" data-i18n="card_action">Zobacz projekt →</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ═══════════════ PREZENTACJE BEHANCE ═══════════════ -->
+      <div class="behance-showcase-section reveal">
+        <div class="section-header" style="margin-bottom: 24px;">
+          <div class="behance-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.767-.63.165-1.27.25-1.95.25H0V4.51h6.938v-.007zM6.545 10.16c.6 0 1.07-.15 1.43-.46.36-.31.53-.75.53-1.34 0-.36-.06-.65-.2-.88-.13-.23-.3-.41-.53-.54-.23-.13-.5-.22-.78-.27-.29-.05-.6-.07-.93-.07H3.53v3.56h3.015zm.185 5.98c.36 0 .7-.04 1.01-.13.31-.09.58-.22.81-.4.23-.17.41-.4.54-.68.13-.28.19-.62.19-1.01 0-.81-.23-1.39-.68-1.74-.46-.35-1.06-.53-1.81-.53H3.53v4.49h3.2zm9.69-8.41c.66 0 1.26.12 1.81.35.55.23 1.02.56 1.42.98.39.42.69.93.9 1.53.21.6.31 1.27.31 2.01 0 .22-.01.42-.04.59H14.28c.03.82.28 1.44.77 1.87.48.43 1.08.65 1.79.65.53 0 .99-.13 1.37-.39.38-.26.64-.55.78-.87h2.59c-.41 1.22-1.05 2.1-1.93 2.65-.87.55-1.9.82-3.07.82-.84 0-1.6-.14-2.29-.42-.69-.28-1.28-.68-1.76-1.19-.49-.51-.87-1.12-1.13-1.83-.27-.71-.4-1.49-.4-2.35 0-.83.13-1.59.4-2.29.27-.7.64-1.3 1.12-1.81.48-.51 1.06-.9 1.73-1.19.68-.29 1.43-.43 2.25-.43v.01zm2.34 3.94c-.06-.72-.3-1.28-.71-1.68-.42-.4-.97-.6-1.66-.6-.38 0-.72.07-1.02.2-.3.14-.55.32-.76.55-.21.23-.37.49-.49.79-.12.3-.19.6-.22.92h4.86v-.18z"/>
+            </svg>
+            <span data-i18n="behance_pill">Projekty z Behance</span>
+          </div>
+          <h3 class="section-title" style="font-size: 28px; margin-top: 10px;" data-i18n="behance_title">
+            Interaktywne <span class="ruby-text">prezentacje</span>
+          </h3>
+          <p class="section-caption" data-i18n="behance_caption">
+            Przeglądaj oryginalne interaktywne prezentacje tutaj lub przejdź do pełnych projektów na Behance.
+          </p>
+        </div>
+
+        <div class="behance-grid-2">
+          <!-- 1. PRO IT -->
+          <div class="behance-embed-card">
+            <div class="behance-embed-header">
+              <div class="behance-embed-info">
+                <span class="project-tag" style="margin-bottom: 6px;" data-i18n="behance_pro_it_tag">Branding &amp; Identyfikacja</span>
+                <h4 class="behance-embed-title" data-i18n="behance_pro_it_title">Pro IT — Logotyp &amp; Identyfikacja dla szkoły IT</h4>
+              </div>
+              <a href="https://www.behance.net/gallery/195319111/Pro-IT-Logotype-Brand-Identity-dlja-shkoly-IT?platform=direct" target="_blank" rel="noopener noreferrer" class="btn btn-outline behance-ext-btn" data-i18n="behance_btn">
+                Zobacz na Behance ↗
+              </a>
+            </div>
+            <div class="behance-embed-frame">
+              <iframe src="https://www.behance.net/embed/project/195319111?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+
+          <!-- 2. SEWING STUDIO -->
+          <div class="behance-embed-card">
+            <div class="behance-embed-header">
+              <div class="behance-embed-info">
+                <span class="project-tag" style="margin-bottom: 6px;" data-i18n="behance_sewing_tag">Koncepcja UI/UX</span>
+                <h4 class="behance-embed-title">Sewing Studio — Japanese Aesthetic UI Concept</h4>
+              </div>
+              <a href="https://www.behance.net/gallery/243081589/Sewing-Studio-Japanese-Aesthetic-UI-Concept?platform=direct" target="_blank" rel="noopener noreferrer" class="btn btn-outline behance-ext-btn" data-i18n="behance_btn">
+                Zobacz na Behance ↗
+              </a>
+            </div>
+            <div class="behance-embed-frame">
+              <iframe src="https://www.behance.net/embed/project/243081589?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ KONTAKT ═══════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal" data-i18n="contact_title">
+        Stwórzmy <span class="ruby-text">coś</span> razem
+      </h2>
+      <p class="contact-subtitle reveal" data-i18n="contact_sub">
+        Szukam stażu lub stanowiska Junior (grafika, komunikacja wizualna, branding). Jestem także otwarta na ciekawe zlecenia.
+      </p>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" class="form-label" data-i18n="form_name_label">Imię</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Twoje imię" data-i18n-placeholder="form_name_ph" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label" data-i18n="form_email_label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="email@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label" data-i18n="form_msg_label">Wiadomość</label>
+          <textarea id="message" name="message" class="form-input form-textarea" placeholder="Opowiedz o swoim projekcie lub ofercie..." data-i18n-placeholder="form_msg_ph" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-filled btn-submit" data-i18n="form_submit">
+          Wyślij wiadomość
+        </button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════ STOPKA ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 Varvara Stasheuskaya. Wszelkie prawa zastrzeżone</p>
+
+      <div class="footer-socials">
+        <a href="https://t.me/MadHouse0D" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram (@MadHouse0D)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+        </a>
+        <a href="https://www.behance.net/d6910dd3" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Behance Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.767-.63.165-1.27.25-1.95.25H0V4.51h6.938v-.007zM6.545 10.16c.6 0 1.07-.15 1.43-.46.36-.31.53-.75.53-1.34 0-.36-.06-.65-.2-.88-.13-.23-.3-.41-.53-.54-.23-.13-.5-.22-.78-.27-.29-.05-.6-.07-.93-.07H3.53v3.56h3.015zm.185 5.98c.36 0 .7-.04 1.01-.13.31-.09.58-.22.81-.4.23-.17.41-.4.54-.68.13-.28.19-.62.19-1.01 0-.81-.23-1.39-.68-1.74-.46-.35-1.06-.53-1.81-.53H3.53v4.49h3.2zm9.69-8.41c.66 0 1.26.12 1.81.35.55.23 1.02.56 1.42.98.39.42.69.93.9 1.53.21.6.31 1.27.31 2.01 0 .22-.01.42-.04.59H14.28c.03.82.28 1.44.77 1.87.48.43 1.08.65 1.79.65.53 0 .99-.13 1.37-.39.38-.26.64-.55.78-.87h2.59c-.41 1.22-1.05 2.1-1.93 2.65-.87.55-1.9.82-3.07.82-.84 0-1.6-.14-2.29-.42-.69-.28-1.28-.68-1.76-1.19-.49-.51-.87-1.12-1.13-1.83-.27-.71-.4-1.49-.4-2.35 0-.83.13-1.59.4-2.29.27-.7.64-1.3 1.12-1.81.48-.51 1.06-.9 1.73-1.19.68-.29 1.43-.43 2.25-.43v.01zm2.34 3.94c-.06-.72-.3-1.28-.71-1.68-.42-.4-.97-.6-1.66-.6-.38 0-.72.07-1.02.2-.3.14-.55.32-.76.55-.21.23-.37.49-.49.79-.12.3-.19.6-.22.92h4.86v-.18z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════ BEHANCE-LIKE PROJECT MODAL ═══════════════ -->
+  <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-window">
+      <!-- Верхняя панель управления -->
+      <header class="modal-nav">
+        <div class="modal-nav-info">
+          <span class="modal-project-badge" id="modalBadge">Kategoria</span>
+          <span class="modal-project-title-mini" id="modalTitleMini">Projekt</span>
+        </div>
+        <div class="modal-nav-actions">
+          <button class="modal-btn-close" id="modalCloseBtn" aria-label="Zamknij (Esc)" data-i18n-aria="modal_close_aria">
+            <span class="modal-close-text" data-i18n="modal_close">Zamknij</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Содержимое кейса (листается вниз) -->
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

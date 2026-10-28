@@ -1,0 +1,13 @@
+# Исходные тяжелые рабочие материалы (PSD, PSB, архивы на 12 ГБ)
+мои работы/
+*.psd
+*.psb
+*.zip
+*.rar
+about/выписка обо мне.txt
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+.agentrules.txt
